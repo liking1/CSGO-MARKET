@@ -17,12 +17,12 @@ void Knife::input()
 	ofstream fout("Knife.csv", ios::out | ios::app);
 	if (fout.is_open())
 	{
-		fout << "-------" << data_.name_ << "-------" << endl;
-		fout << data_.type_ << "   " << '\"' << data_.type_ << '\"' << endl;
-		fout << data_.name_ << "   " << '\"' << data_.type_ << '\"' << endl;
-		fout << data_.rare_ << "   " << '\"' << data_.type_ << '\"' << endl;
-		fout << data_.price_ << "   " << '\"' << data_.type_ << '\"' << endl;
-		fout << "-------" << data_.type_ << "-------" << endl;
+		fout << "--------------" << endl;
+		fout << data_.type_  <<  endl;
+		fout << data_.name_ << endl;
+		fout << data_.rare_ << endl;
+		fout << data_.price_ << endl;
+		fout << "--------------" << endl;
 		fout << endl;
 		cout << "data written successfully" << endl;
 	}

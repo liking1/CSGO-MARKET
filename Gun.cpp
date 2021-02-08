@@ -23,18 +23,19 @@ void Gun::input()
 	if (fout.is_open())
 	{
 		fout << "-------" << d.type_ << "-------" << endl;
-		fout << d.type_ << "   " << '\"' << d.type_ << '\"' << endl;
-		fout << d.model_ << "   " << '\"' << d.type_ << '\"' << endl;
-		fout << d.f_value << "   " << '\"' << d.type_ << '\"' << endl;
-		fout << d.MAX_BULLETS << "   " << '\"' << d.type_ << '\"' << endl;
-		fout << d.paint_ << "   " << '\"' << d.type_ << '\"' << endl;
-		fout << d.rare_ << "   " << '\"' << d.type_ << '\"' << endl;
-		fout << "-------" << d.type_ << "-------" << endl;
+		fout << d.type_ << endl;
+		fout << d.model_ << endl;
+		fout << d.f_value << endl;
+		fout << d.MAX_BULLETS << endl;
+		fout << d.paint_ << endl;
+		fout << d.rare_ << endl;
+		fout << "--------------" << endl;
 		cout << "data written successfully" << endl;
 	}
 	else
 		cout << "Error: The file was not opened.";
 	fout.close();
+	PAUSE;
 	CLEAN;
 }
 

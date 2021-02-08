@@ -22,14 +22,14 @@ void Pistols::input()
 	ofstream fout("Pistol.csv", ios::out | ios::app);
 	if (fout.is_open())
 	{
-		fout << "-------" << p.type_ << "-------" << endl;
-		fout << p.type_ << "   " << '\"' << p.type_ << '\"' << endl;
-		fout << p.model_ << "   " << '\"' << p.type_ << '\"' << endl;
-		fout << p.f_value << "   " << '\"' << p.type_ << '\"' << endl;
-		fout << p.MAX_BULLETS << "   " << '\"' << p.type_ << '\"' << endl;
-		fout << p.paint_ << "   " << '\"' << p.type_ << '\"' << endl;
-		fout << p.rare_ << "   " << '\"' << p.type_ << '\"' << endl;
-		fout << "-------" << p.type_ << "-------" << endl;
+		fout << "--------------" << endl;
+		fout << p.type_ << endl;
+		fout << p.model_ << endl;
+		fout << p.f_value << endl;
+		fout << p.MAX_BULLETS << endl;
+		fout << p.paint_ << endl;
+		fout << p.rare_ << endl;
+		fout << "--------------" << endl;
 		fout << endl;
 		cout << "data written successfully" << endl;
 		Sleep(2000);
